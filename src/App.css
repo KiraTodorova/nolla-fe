@@ -1,0 +1,80 @@
+.Main-design-body {
+  background-color: #161616;
+  position: relative;
+  border-color: #010500;
+  border-style: double;
+  border-width: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  height: fit-content;
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.App-header {
+  font-family: "Ludia Console", Cursive;
+  color: rgb(223, 3, 3);
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.Main-section {
+  font-family: "Ludia Console", Cursive;
+  color: #f7beb7;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.Twitter-label {
+  font-family: "Ludia Console", Cursive;
+  color: #7ff5ef;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Twitter-counter {
+  font-family: "Ludia Console", Cursive;
+  color: #83f57f;
+}
+
+.Text-field {
+  background-color: rgba(59, 0, 0, 0.959);
+  color: rgb(3, 182, 26);
+  height: 200px;
+  width: 398px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.Tweet-body {
+  font-family: "Ludia Console", Cursive;
+  color: rgb(192, 108, 218);
+  padding-top: 15px;
+  padding-left: 15px;
+  border-color: #7e0000c4;
+  border-style: double;
+  border-width: 15px;
+}
+
+.Tweet-date {
+  font-family: "Ludia Console", Cursive;
+  color: rgb(192, 108, 218);
+  padding-top: 15px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.Twitter-button {
+  padding-top: 15px;
+}
+
+.Footer {
+  padding-left: 15px;
+  padding-top: 15px;
+  color: #ff88af;
+}
