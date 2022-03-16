@@ -39,6 +39,28 @@ const tweet3_date = "4/3/2021";
 const GET_TWEETS_URL = "http://localhost:8080/fetchTweet";
 const POST_TWEETS_URL = "http://localhost:8080/saveTweet";
 
+dateFormat = () => {
+  date = new date();
+
+  const dateString =
+    "Date: " +
+    date.getDate() +
+    "/" +
+    (date.getMonth() + 1) +
+    "/" +
+    date.getFullYear() +
+    " Time: " +
+    date.getHours() +
+    ":" +
+    date.getMinutes() +
+    ":" +
+    date.getSeconds() +
+    ":" +
+    date.getMilliseconds();
+
+  return dateString;
+};
+
 class App extends Component {
   state = {
     tweet: "",
