@@ -1,10 +1,7 @@
-export const CharacterCounter = ({counter, limit}) => {
-
-return (
-
-<div className="Twitter-counter">
-    {counter} /  {limit-counter}
-
-</div>
-);
-}
+export const CharacterCounter = ({ counter, limit, color }) => {
+  return (
+    <div className="Twitter-counter">
+      {counter} / {limit - counter} {color}
+    </div>
+  );
+};
