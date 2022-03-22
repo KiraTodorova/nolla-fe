@@ -175,7 +175,7 @@ class App extends Component {
         <CharacterCounter
           counter={this.state.charCounter}
           limit={this.state.limit}
-          color={this.state.color}
+          color={this.handleOnChange}
         />
 
         <SubmitAndResetButtons

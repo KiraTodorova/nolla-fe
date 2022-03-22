@@ -70,7 +70,10 @@
 }
 
 .Twitter-button {
+  font-family: "Ludia Console", Cursive;
+  color: rgb(25, 34, 167);
   padding-top: 15px;
+  padding-left: 15px;
 }
 
 .Footer {
