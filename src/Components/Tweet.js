@@ -1,19 +1,19 @@
-export const Tweet = ({ tweet, date, deleteTweet, likeTweet, like }) => {
+export const Tweet = ({ tweet, date, handleDelete, handleLike, likes }) => {
   return (
     <div className="Tweet-body">
-      {tweet} {date}, {deleteTweet} {deleteTweet}
+      <span id="Tweet-msg">{tweet}</span>
       <br />
-      <br />
-      <div className="Tweet-date">{date}</div>
-      <button className="Twitter-button" onClick={deleteTweet}>
-        {" "}
-        Delete{" "}
-      </button>
-      <button className="Twitter-button" onClick={likeTweet}>
-        {" "}
-        {like ? `${like}` : "Like"}
-        Like
-      </button>
+      <span className="Tweet-date" id="Tweet-info">
+        {date}
+        <button className="Twitter-button" onClick={handleDelete}>
+          {" "}
+          Delete{" "}
+        </button>
+        <button className="Twitter-button" onClick={handleLike}>
+          {" "}
+          {likes ? `${likes} Likes` : "Like"}{" "}
+        </button>
+      </span>
     </div>
   );
 };

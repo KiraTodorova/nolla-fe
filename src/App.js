@@ -147,21 +147,17 @@ class App extends Component {
       method: "PUT",
     })
       .then((res) => {
+        console.log("res ....", res);
         if (res.ok) {
-          const likedTweet = this.state.tweetsList.find(
+          console.log("ok ....", res);
+          const likedTweet = this.state.tweets.find(
             (tweet) => tweet.twt_id === id
           );
           likedTweet.likes_num = likedTweet.likes_num + 1;
-          this.setState({ tweetsList: this.state.tweetsList });
+          this.setState({ tweets: this.state.tweets });
         } else alert("There is an error ");
       })
       .catch(() => alert("There is an error"));
-  };
-
-  likeTweet = (id) => {
-    fetch(LIKE_TWEET_URL + "/" + id, {
-      method: "PUT",
-    });
   };
   render() {
     return (
@@ -195,12 +191,13 @@ class App extends Component {
 
         <div>
           <Paragraph3 paragraph={this.paragraph} />
-          {this.state.tweets.map((tweet, index, context_twt, like_enum) => (
+          {this.state.tweets.map((tweet, index) => (
             <Tweet
               key={index}
               tweet={tweet.content_twt}
-              like={tweet.twt_like}
-              deleteTweet={() => this.deleteTweet(tweet.twt_id)}
+              likes={tweet.twt_like}
+              handleDelete={() => this.deleteTweet(tweet.twt_id)}
+              handleLike={() => this.likeTweet(tweet.twt_id)}
               date={this.formatDate(tweet.created_twt)}
               className="Tweeter-button"
             />
