@@ -4,7 +4,7 @@
   left: 0;
   width: 22px;
   height: 22px;
-  border: 2px solid rgb(32, 1, 1);
+  border: 2px solid rgb(153, 153, 153);
   border-radius: 100%;
   transform: translate(-50%, -50%);
   -webkit-transition-duration: 100ms;
@@ -22,7 +22,7 @@
   left: 50%;
   width: 8px;
   height: 8px;
-  background-color: rgb(236, 79, 79);
+  background-color: rgb(255, 255, 255);
   border-radius: 100%;
   transform: translate(-50%, -50%);
   z-index: 999;

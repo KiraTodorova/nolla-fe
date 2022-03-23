@@ -8,7 +8,7 @@
   }
   25% {
     background-color: rgba(255, 0, 0, 0.331);
-    color: rgb(255, 0, 174);
+    color: rgb(47, 0, 255);
     left: 200px;
     top: 0px;
     padding: 15px;
@@ -21,8 +21,8 @@
     padding: 15px;
   }
   75% {
-    background-color: rgba(128, 115, 0, 0.29);
-    color: rgb(212, 0, 255);
+    background-color: rgba(128, 0, 0, 0.29);
+    color: rgb(4, 0, 255);
     left: 0px;
     top: 200px;
     padding: 15px;

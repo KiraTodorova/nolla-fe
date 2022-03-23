@@ -230,7 +230,7 @@ class App extends Component {
             />
           ))}
           <div>
-            <Paragraph4 />
+            <Paragraph4 className />
           </div>
 
           <div>
