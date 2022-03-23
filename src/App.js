@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import { selenium } from "./Components/selenium";
+import AnalogClock from "analog-clock-react";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { LabelAndTextArea } from "./Components/LabelAndTextArea";
@@ -9,7 +9,7 @@ import { Tweet } from "./Components/Tweet";
 import { Paragraph1 } from "./Components/Paragraph1";
 import { Paragraph2 } from "./Components/Paragraph2";
 import { Paragraph3 } from "./Components/Paragraph3";
-import { Gif1 } from "./Components/AnimationGIF";
+import { Gif1 } from "./Components/AnimationGIF1";
 import { Paragraph4 } from "./Components/Paragraph4";
 import "./App.css";
 
@@ -55,6 +55,22 @@ class App extends Component {
     charCounter: 0,
     limit: 250,
     color: "#83F57F",
+  };
+
+  updateClock = () => {
+    let ausTime = new Date().toLocaleString("en-US", {
+      timeZone: "Australia/Brisbane",
+    });
+    let date = new Date(ausTime);
+
+    this.setState({
+      options: {
+        ...this.state.options,
+        seconds: date.getSeconds(),
+        minutes: date.getMinutes(),
+        hours: date.getHours(),
+      },
+    });
   };
 
   formatDate(dateString) {
@@ -162,9 +178,15 @@ class App extends Component {
       })
       .catch(() => alert("There is an error"));
   };
+
   render() {
     return (
       <div className="Main-design-body">
+        <div>
+          <AnalogClock
+            clock={(this.interval = setInterval(this.updateClock, 1000))}
+          />
+        </div>
         <Header name="ADA's Communication Center" />
         <Paragraph1 paragraph={this.paragraph} />
 
@@ -208,9 +230,10 @@ class App extends Component {
           </div>
 
           <div>
-            <Gif1 gif={this.gif} />
+            <Gif1 className="Gif1" gif={this.gif} />
           </div>
         </div>
+
         <Footer copyright={"Copyrighted by "} company={"Mc Fluffn' Burgers."} />
       </div>
     );

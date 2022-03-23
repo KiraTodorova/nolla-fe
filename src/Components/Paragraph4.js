@@ -3,7 +3,7 @@ export const Paragraph4 = ({ paragraph }) => {
     <div className="Animation1">
       <br />
       <br />
-      <h4>This project is used for a demo for NOLLA!</h4>
+      <h2>This project is used for a demo for NOLLA!</h2>
       <br />
       <br />
       <p>

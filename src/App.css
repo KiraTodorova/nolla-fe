@@ -4,30 +4,35 @@
     color: rgb(47, 0, 255);
     left: 0px;
     top: 0px;
+    padding: 15px;
   }
   25% {
     background-color: rgba(255, 0, 0, 0.331);
     color: rgb(255, 0, 174);
     left: 200px;
     top: 0px;
+    padding: 15px;
   }
   50% {
     background-color: rgba(92, 0, 0, 0.29);
     color: rgb(34, 0, 255);
     left: 200px;
     top: 200px;
+    padding: 15px;
   }
   75% {
     background-color: rgba(128, 115, 0, 0.29);
     color: rgb(212, 0, 255);
     left: 0px;
     top: 200px;
+    padding: 15px;
   }
   100% {
     background-color: rgba(107, 0, 0, 0.379);
     color: rgb(0, 30, 255);
     left: 0px;
     top: 0px;
+    padding: 15px;
   }
 }
 
@@ -70,6 +75,7 @@
   color: #7ff5ef;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15px;
 }
 
 .Twitter-counter {
@@ -168,7 +174,8 @@
 
 .Gif1 {
   position: relative;
-  left: 50px;
+  left: 30px;
+  bottom: 50px;
   padding-top: 50px;
   padding-left: 15px;
   padding-right: 15px;

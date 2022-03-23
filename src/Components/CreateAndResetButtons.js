@@ -3,6 +3,7 @@ import { Component } from "react";
 export const SubmitAndResetButtons = (props) => {
   return (
     <div>
+      <br />
       <button className="Twitter-button" onClick={props.handleSubmit}>
         {props.submitLabel}
       </button>
@@ -11,6 +12,9 @@ export const SubmitAndResetButtons = (props) => {
           {props.resetLabel}
         </button>
       )}
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
