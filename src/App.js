@@ -9,6 +9,7 @@ import { Tweet } from "./Components/Tweet";
 import { Paragraph1 } from "./Components/Paragraph1";
 import { Paragraph2 } from "./Components/Paragraph2";
 import { Paragraph3 } from "./Components/Paragraph3";
+import { Gif1 } from "./Components/AnimationGIF";
 import { Paragraph4 } from "./Components/Paragraph4";
 import "./App.css";
 
@@ -204,6 +205,10 @@ class App extends Component {
           ))}
           <div>
             <Paragraph4 />
+          </div>
+
+          <div>
+            <Gif1 gif={this.gif} />
           </div>
         </div>
         <Footer copyright={"Copyrighted by "} company={"Mc Fluffn' Burgers."} />

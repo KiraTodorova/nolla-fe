@@ -161,9 +161,18 @@
 .Animation1 {
   animation-name: animation1;
   animation-duration: 10s;
-  animation-iteration-count: 4;
+  animation-iteration-count: infinite;
   position: absolute;
   color: #161616;
+}
+
+.Gif1 {
+  position: relative;
+  left: 50px;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
 
 .Footer {
