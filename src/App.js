@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DotRing from "./Components/DotRing";
 import AnalogClock from "analog-clock-react";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
@@ -182,6 +183,9 @@ class App extends Component {
   render() {
     return (
       <div className="Main-design-body">
+        <DotRing />
+        <div className="container"></div>
+        <div className="container" style={{ background: "peachpuff" }}></div>
         <div>
           <AnalogClock
             clock={(this.interval = setInterval(this.updateClock, 1000))}
