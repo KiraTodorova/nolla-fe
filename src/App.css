@@ -43,7 +43,7 @@
   flex-direction: column;
   overflow: auto;
 
-  height: 1900px;
+  height: fit-content;
   width: 1000px;
   padding-left: 15px;
   padding-right: 15px;
@@ -79,6 +79,7 @@
 }
 
 .Text-field {
+  position: relative;
   background-color: rgba(59, 0, 0, 0.959);
   color: rgb(3, 182, 26);
   box-shadow: 20px 5px 10px rgb(66, 37, 36);
