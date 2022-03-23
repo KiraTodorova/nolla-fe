@@ -5,11 +5,11 @@ export const Tweet = ({ tweet, date, handleDelete, handleLike, likes }) => {
       <br />
       <span className="Tweet-date" id="Tweet-info">
         {date}
-        <button className="Twitter-button" onClick={handleDelete}>
+        <button className="Twitter-button3" onClick={handleDelete}>
           {" "}
           Delete{" "}
         </button>
-        <button className="Twitter-button" onClick={handleLike}>
+        <button className="Twitter-button4" onClick={handleLike}>
           {" "}
           {likes ? `${likes} Likes` : "Like"}{" "}
         </button>

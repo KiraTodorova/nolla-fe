@@ -1,3 +1,36 @@
+@keyframes animation1 {
+  0% {
+    background-color: rgba(100, 0, 0, 0.311);
+    color: rgb(47, 0, 255);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgba(255, 0, 0, 0.331);
+    color: rgb(255, 0, 174);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgba(92, 0, 0, 0.29);
+    color: rgb(34, 0, 255);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgba(128, 115, 0, 0.29);
+    color: rgb(212, 0, 255);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgba(107, 0, 0, 0.379);
+    color: rgb(0, 30, 255);
+    left: 0px;
+    top: 0px;
+  }
+}
+
 .Main-design-body {
   background-color: #161616;
   position: relative;
@@ -5,12 +38,13 @@
   border-style: double;
   border-width: 30px;
   border-radius: 20px;
+  box-shadow: 20px 20px 25px rgb(68, 0, 0);
   display: flex;
   flex-direction: column;
   overflow: auto;
 
-  height: fit-content;
-  width: fit-content;
+  height: 1900px;
+  width: 1000px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -21,6 +55,7 @@
   color: rgb(223, 3, 3);
   padding-top: 15px;
   padding-left: 15px;
+  text-shadow: 20px 5px 5px #7c615d;
 }
 
 .Main-section {
@@ -40,11 +75,13 @@
 .Twitter-counter {
   font-family: "Ludia Console", Cursive;
   color: #83f57f;
+  text-shadow: 10px -5px rgb(37, 66, 36);
 }
 
 .Text-field {
   background-color: rgba(59, 0, 0, 0.959);
   color: rgb(3, 182, 26);
+  box-shadow: 20px 5px 10px rgb(66, 37, 36);
   height: 200px;
   width: 398px;
   padding-right: 15px;
@@ -54,11 +91,11 @@
 .Tweet-body {
   font-family: "Ludia Console", Cursive;
   color: rgb(192, 108, 218);
-  padding-top: 15px;
-  padding-left: 15px;
+  padding: 15px;
   border-color: #7e0000c4;
   border-style: double;
   border-width: 15px;
+  box-shadow: 10px -10px 20px rgb(238, 174, 174);
 }
 
 .Tweet-date {
@@ -71,9 +108,61 @@
 
 .Twitter-button {
   font-family: "Ludia Console", Cursive;
-  color: rgb(25, 34, 167);
-  padding-top: 15px;
-  padding-left: 15px;
+  background-color: #83f57f;
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 0px 10px rgb(41, 66, 36);
+  padding: 15px;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  left: 350px;
+}
+
+.Twitter-button2 {
+  font-family: "Ludia Console", Cursive;
+  background-color: #f57f7f;
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 0px 10px rgb(66, 36, 36);
+  padding: 15px;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  position: relative;
+  left: 190px;
+}
+
+.Twitter-button3 {
+  font-family: "Ludia Console", Cursive;
+  background-color: #fa8787;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  box-shadow: 10px -5px 5px rgb(66, 36, 36);
+  border: none;
+  text-decoration: none;
+  border-radius: 40px;
+  position: relative;
+  left: 650px;
+}
+
+.Twitter-button4 {
+  font-family: "Ludia Console", Cursive;
+  background-color: #adffa2;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  box-shadow: 10px -5px 5px rgb(41, 66, 36);
+  border: none;
+  text-decoration: none;
+  border-radius: 40px;
+  position: relative;
+  left: 670px;
+}
+.Animation1 {
+  animation-name: animation1;
+  animation-duration: 10s;
+  animation-iteration-count: 4;
+  position: absolute;
+  color: #161616;
 }
 
 .Footer {

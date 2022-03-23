@@ -9,6 +9,7 @@ import { Tweet } from "./Components/Tweet";
 import { Paragraph1 } from "./Components/Paragraph1";
 import { Paragraph2 } from "./Components/Paragraph2";
 import { Paragraph3 } from "./Components/Paragraph3";
+import { Paragraph4 } from "./Components/Paragraph4";
 import "./App.css";
 
 const tweets = [
@@ -88,6 +89,7 @@ class App extends Component {
         color: "green",
       });
   };
+
   handleOnClick = () => {
     alert(this.state.tweet);
   };
@@ -166,7 +168,7 @@ class App extends Component {
         <Paragraph1 paragraph={this.paragraph} />
 
         <LabelAndTextArea
-          labelValue="What's in your mind?"
+          labelValue="What did You find?"
           onChange={this.handleOnChange}
           textValue={this.state.tweet}
         />
@@ -183,7 +185,6 @@ class App extends Component {
           resetLabel="Reset"
           handleSubmit={this.postATweet}
           handleReset={this.handleReset}
-          hideReset
         />
         <div>
           <Paragraph2 paragraph={this.paragraph} />
@@ -199,9 +200,11 @@ class App extends Component {
               handleDelete={() => this.deleteTweet(tweet.twt_id)}
               handleLike={() => this.likeTweet(tweet.twt_id)}
               date={this.formatDate(tweet.created_twt)}
-              className="Tweeter-button"
             />
           ))}
+          <div>
+            <Paragraph4 />
+          </div>
         </div>
         <Footer copyright={"Copyrighted by "} company={"Mc Fluffn' Burgers."} />
       </div>
