@@ -1,35 +1,35 @@
 @keyframes animation1 {
   0% {
     background-color: rgba(100, 0, 0, 0.311);
-    color: rgb(47, 0, 255);
+    color: rgb(174, 157, 248);
     left: 0px;
     top: 0px;
     padding: 15px;
   }
   25% {
     background-color: rgba(255, 0, 0, 0.331);
-    color: rgb(47, 0, 255);
+    color: rgb(177, 160, 255);
     left: 200px;
     top: 0px;
     padding: 15px;
   }
   50% {
     background-color: rgba(92, 0, 0, 0.29);
-    color: rgb(34, 0, 255);
+    color: rgb(157, 142, 255);
     left: 200px;
     top: 200px;
     padding: 15px;
   }
   75% {
     background-color: rgba(128, 0, 0, 0.29);
-    color: rgb(4, 0, 255);
+    color: rgb(160, 159, 255);
     left: 0px;
     top: 200px;
     padding: 15px;
   }
   100% {
     background-color: rgba(107, 0, 0, 0.379);
-    color: rgb(0, 30, 255);
+    color: rgb(159, 170, 250);
     left: 0px;
     top: 0px;
     padding: 15px;
@@ -57,7 +57,7 @@
 
 .App-header {
   font-family: "Ludia Console", Cursive;
-  color: rgb(223, 3, 3);
+  color: rgb(255, 124, 124);
   padding-top: 15px;
   padding-left: 15px;
   text-shadow: 20px 5px 5px #7c615d;
@@ -72,7 +72,7 @@
 
 .Twitter-label {
   font-family: "Ludia Console", Cursive;
-  color: #7ff5ef;
+  color: #7f9ef5;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -80,8 +80,8 @@
 
 .Twitter-counter {
   font-family: "Ludia Console", Cursive;
-  color: #83f57f;
-  text-shadow: 10px -5px rgb(37, 66, 36);
+  color: #7fa4f5;
+  text-shadow: 10px -5px rgb(36, 48, 66);
 }
 
 .Text-field {

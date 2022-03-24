@@ -1,6 +1,6 @@
 export const AnalogClock = ({ clock }) => {
   let options = {
-    useCustomTime: true, // set this to true
+    useCustomTime: true,
     width: "300px",
     border: true,
     borderColor: "#2e2e2e",
